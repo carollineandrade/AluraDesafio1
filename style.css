@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,244;1,244&display=swap');
+
+:root{
+    --maincolor: #ffffff;
+    --secondarycolor: #D8DFE8;
+    --titlecolor: #0f2f4f;
+    
+}
+
+body{
+    
+    background: var(--secondarycolor);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.80%;
+}
+
+.logo img{
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+
+}
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input{
+    width: 400px;
+    height: 330px;
+
+}
+
+.input #texto{
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--titlecolor);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    
+
+}
+
+#output {
+    background: var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--titlecolor);
+
+}
+
+#output p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--titlecolor); 
+}
+
+
+#output img{
+    max-width: 300px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+
+}
+
+.container-bt .bt1{
+    font-weight: bold;
+    background: var(--titlecolor);
+    border: 2px solid var(--titlecolor);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--secondarycolor);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.container-bt .bt2{
+    font-weight: bold;
+    background: #c5d4e7;
+    border: 2px solid var(--titlecolor);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--titlecolor);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.container-bt button:hover{
+    border: 2px solid var(--secondarycolor);
+    transition: 0.5s all;
+}
+
+.bt3{
+    background: var(--maincolor);
+    border: 2px solid var(--titlecolor);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--titlecolor);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.rodape footer{
+    color: var(--titlecolor); 
+    text-align: center; 
+    padding: 2px; 
+    font-size: 12px; 
+    font-weight: bold; 
+ 
+}
+
