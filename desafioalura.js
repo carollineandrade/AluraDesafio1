@@ -41,3 +41,17 @@ function copiar() {
             console.error("Falha ao copiar o texto: ", err);
         });
 }
+
+function filtrarTexto() {
+    let texto = textInput.value;
+    texto = texto.toLowerCase()
+                 .replace(/[ÁÀÂÃÅ]/g, 'a')
+                 .replace(/[ÉÈÊ]/g, 'e')
+                 .replace(/[ÍÌÎ]/g, 'i')
+                 .replace(/[ÓÒÔÕ]/g, 'o')
+                 .replace(/[ÚÙÛ]/g, 'u')
+                 .replace(/[^a-z\s]/g, ''); 
+    textInput.value = texto;
+}
+
+textInput.addEventListener('input', filtrarTexto);
